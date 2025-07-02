@@ -54,6 +54,23 @@ body {
     justify-content: center;
 }
 
+
+#location {
+    background-color: #a0f6df;
+    color: rgb(12, 11, 43);
+    padding: 5px;
+    font-size: 12px;
+    margin: 4px;
+
+    transition: 200ms ease;
+}
+
+#location:hover {
+    background-color: rgb(12, 11, 43);
+    color: #a0f6df;
+}
+
+
 .search button img {
     width: 16px;
 }
@@ -115,6 +132,7 @@ body {
     display: none;
 
     justify-content: space-around;
+    flex-wrap: wrap;
 
 
 
@@ -123,4 +141,40 @@ body {
 
 .FiveDayWeather>div {
     flex-basis: 20%;
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .card {
+        margin: 0;
+    }
+
+    .FiveDayWeather {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        margin-top: 50px;
+
+
+
+
+    }
+
+    .FiveDayWeather>div {
+        width: 100%;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #f3f3f3;
+    }
+
+    .days h1 {
+        font-size: 1em;
+    }
+
+    .days p {
+        font-size: 1em;
+
+
+    }
+
 }
