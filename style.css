@@ -10,7 +10,7 @@ body {
 }
 
 .card {
-    width: 90%;
+
     /* max-width: 470px;*/
     background: linear-gradient(135deg, #1affc2, #5b5391);
     color: #fff;
@@ -110,6 +110,8 @@ body {
 
 .FiveDayWeather {
     width: 100%;
+    margin-top: 100px;
+
     display: none;
 
     justify-content: space-around;

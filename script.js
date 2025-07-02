@@ -28,7 +28,9 @@ async function checkWeather() {
 
             document.querySelector(".wind").innerHTML = data.wind.speed + "km/hr";
 
-            document.querySelector(".weather-icon").src = `images\\${data.weather[0].main.toLowerCase()}.png`
+            document.querySelector(".weather-video source").src = `images\\${data.weather[0].main.toLowerCase()}.webm`
+            document.querySelector(".weather-video").load();
+
             FiveDayForecast(cityName);
             document.querySelector(".weather").style.display = "block";
             document.querySelector(".FiveDayWeather").style.display = "flex";
@@ -81,7 +83,12 @@ function fillFiveDay() {
         let day = FiveDay.querySelector(`.day${i}`);
         let [date, time] = dailyForecast[i].dt_txt.split(" ");
         day.querySelector(".date").innerHTML = date;
-        day.querySelector("img").src = `images\\${dailyForecast[i].weather[0].main.toLowerCase()}.png`;
+
+        const video = day.querySelector("video");
+        const source = video.querySelector("source");
+
+        source.src = `images/${dailyForecast[i].weather[0].main.toLowerCase()}.webm`;
+        day.querySelector(".daily-weather-video").load();
         day.querySelector(".t").innerHTML = Math.round(dailyForecast[i].main.temp) + "°C";
         day.querySelector(".h").innerHTML = dailyForecast[i].main.humidity + "%";
         day.querySelector(".w").innerHTML = dailyForecast[i].wind.speed + "km/hr";
