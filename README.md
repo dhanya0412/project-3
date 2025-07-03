@@ -20,23 +20,26 @@ This app allows you to:
 
 ---
 
-## Project Structure
+## Project Folder Structure
+
+```plaintext
 weather-app/
-├── index.html
-├── style.css
-├── script.js
-├── config.js (ignored in git)
-├── config-example.js 
-├── images/
-│ ├── rain.png
-│ ├── clear.png
-│ ├── clouds.png
-│ └── ...etc.
+│
+├── index.html             # Main HTML file
+├── style.css              # Styling with Flexbox & gradients
+├── script.js              # All JS logic (API calls, geolocation, rendering)
+├── config.js              # Your personal API key (NOT pushed to GitHub)
+├── config-example.js      # Example template for sharing safely
+├── images/                # Weather icons (e.g., rain.png, clear.png)
+│   ├── rain.png
+│   ├── clear.png
+│   ├── clouds.png
+│   └── ...
 
 
 ---
 
-## 🔑 API Key Setup
+## API Key Setup
 
 This project uses **OpenWeatherMap API**, and for safety, the API key is stored in a separate file.
 
