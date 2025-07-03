@@ -36,7 +36,7 @@ weather-app/
 │   ├── clouds.png
 │   └── ...
 
-
+```
 ---
 
 ## API Key Setup
@@ -51,4 +51,6 @@ This project uses **OpenWeatherMap API**, and for safety, the API key is stored 
 ```js
 // config.js
 const apiKey = "YOUR_API_KEY_HERE";
+```
+
 
