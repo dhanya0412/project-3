@@ -45,8 +45,8 @@ To run the project locally:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/weather-app.git
-cd weather-app
+git clone https://github.com/username/project-3.git
+cd project-3
 ```
 
 ### 2. Set up API KEy
