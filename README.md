@@ -72,5 +72,16 @@ Simply run the index.html file in your browser.
 ---
 
 ## Geolocation feature
+When you click the "check by location" button:
+- The browser asks for location access
+- If allowed, your current latitude & longitude are used to fetch live weather data from OpenWeatherMap
+- City name, temperature, humidity, wind speed, and forecast are displayed
+
+---
+
+##  APIs Used
+- OpenWeatherMap Current Weather API
+- OpenWeatherMap 5-Day Forecast API
+- Geolocation API (Browser)
 
 
