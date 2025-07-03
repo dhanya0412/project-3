@@ -38,12 +38,20 @@ weather-app/
 
 ```
 ---
+## Getting Started
 
-## API Key Setup
+To run the project locally:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/weather-app.git
+cd weather-app
+```
+
+### 2. Set up API KEy
 
 This project uses **OpenWeatherMap API**, and for safety, the API key is stored in a separate file.
-
-### Step-by-step:
 
 1. Create a new file `config.js` and copy the contents of `config-example.js` in it
 2. Inside `config.js`, paste your API key:
@@ -52,5 +60,17 @@ This project uses **OpenWeatherMap API**, and for safety, the API key is stored 
 // config.js
 const apiKey = "YOUR_API_KEY_HERE";
 ```
+
+To get the API key, follow the following steps:
+- Create a free account at OpenWeatherMap
+- Click on the API keys section and get you API key from there
+- Put this API key in your config.js file
+
+### 3. Run the App
+Simply run the index.html file in your browser.
+
+---
+
+## Geolocation feature
 
 
